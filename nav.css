@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Comfortaa:wght@700&family=Lobster+Two:ital,wght@1,700&family=Montserrat:wght@500&family=Rubik:wght@300&display=swap');
+ *{ margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.logo 
+{
+  height: 58px;
+  padding :10px;
+  background-color:#24252A;
+}
+p{
+  margin: 10px;
+}
+.navbar1{
+  display: flex;/*For making elements of class Navbar to act like inline elements */
+  align-items: center;
+  justify-content: space-between;/*  aligning the contents of Navbar to center */
+  padding-right: 30px 10% ;/* Applying padding from all directions */ 
+}
+.navbar{
+  width: 100%;
+  background-color:#24252A;
+  border-radius: 0px;
+  padding-top:5px;
+  padding-bottom: 4px;
+  
+}
+.navbar ul{
+  overflow: auto;
+  list-style: none;
+}
+.navbar li{
+  float:left;
+  list-style: none; 
+  margin: 13px 20px;
+  
+}
+.navbar li a{
+  text-decoration: none;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#edf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover{
+  color: rgb(50, 135, 44);
+}
+.search{
+  float: right;
+  color: white;
+  padding: 12px 75px;
+}
+.navbar input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+a{
+  text-decoration: none;  
+  color: #ffffff;
+}
+button
+{color: #ffffff;
+   padding: 9px 25px;
+   background-color: rgb(57, 143, 51);
+   border:none;
+   border-radius: 50px;
+   cursor:pointer;
+   transition:all 0.3s ease 0s;
+   font-family:'Montserrat', sans-serif ;
+   font-weight: 500;
+  font-size: 16px;
+  margin-top: 5px;
+
+}
+button:hover
+{
+  background-color: rgb(50, 135, 44,0.6);
+}

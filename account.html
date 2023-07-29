@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="account.css">
+    <title>Accounts</title>
+
+    <script>
+
+        function validateEmail(email) {
+          const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return regex.test(email);
+        }        
+        function validatePhoneNumber(phoneNumber) {
+          const regex = /^\d{10}$/;
+          return regex.test(phoneNumber);
+        }         
+            function validateForm() {
+          const emailInput = document.getElementById("email");
+          const phoneInput = document.getElementById("phone");
+        
+          const email = emailInput.value;
+          const phone = phoneInput.value;
+        
+          if (!validateEmail(email)) {
+            alert("Invalid email format. Please enter a valid email address.");
+            return false; // Prevent form submission
+          }
+          if (!validatePhoneNumber(phone)) {
+            alert("Invalid phone number format. Please enter a 10-digit number.");
+            return false; // Prevent form submission
+          }
+        
+          // All fields are valid
+          // Submit the form or perform other actions
+          return true; // Allow form submission
+        }
+        
+    </script>
+
+</head>
+<body>
+    <div class="navbar1">
+        <nav class="navbar">
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="login">
+            <form method="POST" onsubmit="return validateForm()">
+                <h1>Sign Up</h1>
+                <hr>
+                <p>Welcome !</p>
+                <label>Email</label>
+                <input type="text" id="email" placeholder="abc@exampl.com" required>
+                <label>Phone</label>
+                <input type="number" id="phone" placeholder="9123876105" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter Your Password!" required>
+                <button id="submit">Submit</button>
+                <p>
+                    Already a member ?
+                    <a href="login.html" style="color: blue;">Login</a>
+                </p>
+            </form>
+        </div>
+        <div class="pic">
+            <img src="./vegetable2.jpg">
+        </div>
+    </div>
+</body>
+</html>

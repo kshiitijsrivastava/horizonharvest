@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Comfortaa:wght@700&family=Lobster+Two:ital,wght@1,700&family=Montserrat:wght@500&family=Rubik:wght@300&display=swap');
+ *{ margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.logo 
+{
+  height: 58px;
+  padding :10px;
+  background-color:#24252A;
+}
+p{
+  margin: 10px;
+}
+.navbar1{
+  display: flex;/*For making elements of class Navbar to act like inline elements */
+  align-items: center;
+  justify-content: space-between;/*  aligning the contents of Navbar to center */
+  padding-right: 30px 10% ;/* Applying padding from all directions */ 
+}
+.navbar{
+  width: 100%;
+  background-color:#24252A;
+  border-radius: 0px;
+  padding-top:5px;
+  padding-bottom: 4px;
+  
+}
+.navbar ul{
+  overflow: auto;
+  list-style: none;
+}
+.navbar li{
+  float:left;
+  list-style: none; 
+  margin: 13px 20px;
+  
+}
+.navbar li a{
+  text-decoration: none;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#edf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover{
+  color: rgb(50, 135, 44);
+}
+.search{
+  float: right;
+  color: white;
+  padding: 12px 75px;
+}
+.navbar input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+a{
+  text-decoration: none;  
+  color: #ffffff;
+}
+button
+{color: #ffffff;
+   padding: 9px 25px;
+   background-color: rgb(57, 143, 51);
+   border:none;
+   border-radius: 50px;
+   cursor:pointer;
+   transition:all 0.3s ease 0s;
+   font-family:'Montserrat', sans-serif ;
+   font-weight: 500;
+  font-size: 16px;
+  margin-top: 5px;
+
+}
+button:hover
+{
+  background-color: rgb(50, 135, 44,0.6);
+}
+
+.row{
+    display: flex;  /* For making elements of class Navbar to act like inline elements */
+    align-items: center;
+    flex-wrap: wrap; /* Self Adjusting of elements */
+    justify-content: space-around;
+}
+.categories{        /* Features */
+    margin: 70px 0 ;
+}
+.col-3{
+    flex-basis : 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s; /* Delaying the Transition by .5s for Featured items (Hovering Effect)*/
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align:center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{    /* Changing Color Of The Stars (Review Section) */
+    color: #ff523b;
+}
+.col-4:hover{   /* Hovering effect on Featured Items */
+    transform: translateY(-5px);
+}
+
+
+
+
+/* Footer  */
+
+.container{
+  max-width: 1300px;
+  margin:auto;    /* horizontally center the element within its .*/
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row{
+display: flex;  /* For making elements of class Navbar to act like inline elements */
+align-items: center;
+flex-wrap: wrap; /* Self Adjusting of elements */
+justify-content: space-around;
+}
+
+.footer{
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 28px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+.footer h3{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1{
+  flex-basis: 30%;
+}
+.footer-col-2{
+  flex:1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+.app-logo{
+  margin-top: 20px;
+}
+.app-logo img{
+  width: 140px;
+}
+.footer hr{
+  border: none;
+  background:#b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright{
+  text-align: center;
+}
+.menu-icon{
+  width: 20px;
+  margin-left: 20px;
+  display: none;
+}

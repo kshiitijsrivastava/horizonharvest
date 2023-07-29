@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Comfortaa:wght@700&family=Lobster+Two:ital,wght@1,700&family=Montserrat:wght@500&family=Rubik:wght@300&display=swap');
+ *{ margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.logo 
+{
+  height: 58px;
+  padding :10px;
+  background-color:#24252A;
+}
+p{
+  margin: 10px;
+}
+.navbar1{
+  display: flex;/*For making elements of class Navbar to act like inline elements */
+  align-items: center;
+  justify-content: space-between;/*  aligning the contents of Navbar to center */
+  padding-right: 30px 10% ;/* Applying padding from all directions */ 
+}
+.navbar{
+  width: 100%;
+  background-color:#24252A;
+  border-radius: 0px;
+  padding-top:5px;
+  padding-bottom: 4px;
+  
+}
+.navbar ul{
+  overflow: auto;
+  list-style: none;
+}
+.navbar li{
+  float:left;
+  list-style: none; 
+  margin: 13px 20px;
+  
+}
+.navbar li a{
+  text-decoration: none;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#edf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover{
+  color: rgb(50, 135, 44);
+}
+.search{
+  float: right;
+  color: white;
+  padding: 12px 75px;
+}
+.navbar input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+a{
+  text-decoration: none;  
+  color: #ffffff;
+}
+button
+{color: #ffffff;
+   padding: 9px 25px;
+   background-color: rgb(57, 143, 51);
+   border:none;
+   border-radius: 50px;
+   cursor:pointer;
+   transition:all 0.3s ease 0s;
+   font-family:'Montserrat', sans-serif ;
+   font-weight: 500;
+  font-size: 16px;
+  margin-top: 5px;
+
+}
+button:hover
+{
+  background-color: rgb(50, 135, 44,0.6);
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background-image: url("b2_edited31.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* */
+.intro img{
+  display: block;
+  margin-right:600px ;
+  width: 45%;
+}
+  .intro h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 73px;
+    color: #fffffffb;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right:700px;
+  }
+
+  .intro p {
+    font-family: cursive;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+
+  .intro button {
+    background-color: #ade242;
+    color: #011105;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+  }
+
+  .vegetables {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 80px;
+  }
+
+  .vegetables .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .vegetables .work i {
+    width: fit-content;
+    font-size: 50px;
+    color: #333333;
+    border-radius: 50%;
+    border: 2px solid #333333;
+    padding: 12px;
+  }
+  .work :hover
+  {
+    background-color: rgba(56, 211, 39, 0.6);
+  }
+  .vegetables .work .work-heading {
+    font-size: 20px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+
+  .vegetables .work .work-text {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+  }
+  /* Footer  */
+
+.container{
+    max-width: 1300px;
+    margin:auto;    /* horizontally center the element within its .*/
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+  display: flex;  /* For making elements of class Navbar to act like inline elements */
+  align-items: center;
+  flex-wrap: wrap; /* Self Adjusting of elements */
+  justify-content: space-around;
+}
+
+  .footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 28px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+ .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background:#b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 20px;
+    margin-left: 20px;
+    display: none;
+}
